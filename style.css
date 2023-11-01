@@ -1,0 +1,49 @@
+.grid {
+  margin-left: 35%;
+  margin-top: 185px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 300px;
+}
+
+.acert {
+  font: 14px verdana;
+  margin-left: 1%;
+  margin-top:80px;
+  color: green;
+}
+
+.err {
+  font: 14px verdana;
+  margin-left: 1%;
+  color: red;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  background: black;
+  position: absolute;
+  top: 7%;
+  left: 23%; 
+  background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+  background-size: 400%;
+  font-size: 70px; 
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  font-weight: 600;
+  word-spacing: 5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+0%{
+background-position: 0%;
+}  
+100%{
+  background-position: 400%;
+  }  
+}
