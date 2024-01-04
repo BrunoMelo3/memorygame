@@ -8,11 +8,21 @@
 </head>
 <body>
 
+  <select id="level" onChange="updateSelect()">
+    <option value="0"selected disabled>Selecione o nível</option>
+    <option value="1">Iniciante</option>
+    <option value="2">Intermediário</option>
+    <option value="3">Profissional</option>
+  </select>
+
   <div class="title">Jogo da Memória</div>
 
   <div class="grid">
   </div>
-  
+
+  <div class="button-wrapper"></div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+ 
   <div class="acert">
   <h3>Acertos: <span id="result"></span></h3>
   </div>
@@ -21,6 +31,12 @@
   <h3>Erros: <span id="error"></span></h3>
   </div>
 
+  <div class="alert"></div>
 
 </body>
+
+<footer>
+  <p class="footer">Copyright @2024 | All Rights Reserved</p>
+</footer>
+
 </html>
